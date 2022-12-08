@@ -1,10 +1,19 @@
 import "./App.css";
 import Header from "./common/header/Header";
+import React from "react";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
+      <Router>
+        <Header />
+        <Routes>
+          {/* <Route path="/" exact>
+            <About />
+          </Route> */}
+        </Routes>
+      </Router>
     </>
   );
 }
