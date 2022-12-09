@@ -1,8 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Categories } from "./Categories";
+import { Slide } from "./Slide";
+import "./Home.css";
 
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <section className="home">
+        <div className="container d_flex">
+          <Categories />
+          <Slide />
+        </div>
+      </section>
+    </>
+  );
+};
 
+// export default Home;
